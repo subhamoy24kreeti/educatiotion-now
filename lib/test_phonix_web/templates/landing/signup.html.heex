@@ -1,0 +1,29 @@
+<h1>sign up</h1>
+
+<.form let={f} for={@changeset} action={Routes.authentication_path(@conn, :post_register)}>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p>Oops, something went wrong! Please check the errors below.</p>
+    </div>
+  <% end %>
+
+  <%= label f, "first name" %>
+  <%= text_input f, :first_name %>
+  <%= error_tag f, :first_name %>
+
+  <%= label f, "last name" %>
+  <%= text_input f, :last_name %>
+  <%= error_tag f, :last_name %>
+
+  <%= label f, "email" %>
+  <%= text_input f, :email %>
+  <%= error_tag f, :email %>
+
+  <%= label f, :password %>
+  <%= text_input f, :password %>
+  <%= error_tag f, :password%>
+
+  <div>
+    <%= submit "sign up" %>
+  </div>
+</.form>

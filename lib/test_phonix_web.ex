@@ -89,6 +89,7 @@ defmodule TestPhonixWeb do
 
       import TestPhonixWeb.ErrorHelpers
       import TestPhonixWeb.Gettext
+      import TestPhonixWeb.CommonHelpers
       alias TestPhonixWeb.Router.Helpers, as: Routes
     end
   end

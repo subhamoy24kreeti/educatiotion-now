@@ -3,7 +3,7 @@ import Config
 # Configure your database
 config :test_phonix, TestPhonix.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "2406",
   database: "test_phonix_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,

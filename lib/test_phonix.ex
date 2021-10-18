@@ -7,4 +7,3 @@ defmodule TestPhonix do
   if it comes from the database, an external API or others.
   """
 end
-;;

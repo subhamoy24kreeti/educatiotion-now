@@ -7,7 +7,7 @@ import Config
 # Run `mix help test` for more information.
 config :test_phonix, TestPhonix.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "2406",
   database: "test_phonix_test#{System.get_env("MIX_TEST_PARTITION")}",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox,

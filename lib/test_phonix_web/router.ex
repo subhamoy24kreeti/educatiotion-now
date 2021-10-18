@@ -17,6 +17,20 @@ defmodule TestPhonixWeb.Router do
   scope "/", TestPhonixWeb do
     pipe_through :browser
 
+    resources "/subjects", SubjectController
+
+    resources "/chapters", ChapterController
+
+    resources "/questions", QuestionController
+
+    get "/login", AuthenticationController, :login
+
+    get "/signup", AuthenticationController, :signup
+
+    get "/landing", AuthenticationController, :landing
+
+    post "/post-register-user", AuthenticationController, :post_register
+
     get "/", PageController, :index
   end
 

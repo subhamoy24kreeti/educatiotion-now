@@ -1,0 +1,18 @@
+<h1>Show Subject</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @subject.title %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @subject.description %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.subject_path(@conn, :edit, @subject) %></span> |
+<span><%= link "Back", to: Routes.subject_path(@conn, :index) %></span>
